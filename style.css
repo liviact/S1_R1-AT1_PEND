@@ -1,0 +1,79 @@
+        :root {
+            --lilas-escuro: #5a189a;
+            --lilas-medio: #7b2cbf;
+            --lilas-claro: #e0c3fc;
+            --cinza-texto: #6c757d;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, var(--lilas-medio), var(--lilas-escuro));
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* header */
+        header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar-brand {
+            color: var(--lilas-escuro) !important;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            color: var(--lilas-medio);
+            font-weight: 500;
+        }
+
+        .nav-link.active {
+            background-color: var(--lilas-medio) !important;
+            color: #fff !important;
+        }
+
+        /* main */
+        main {
+            flex: 1;
+            padding-top: 60px;
+        }
+
+        /* card */
+        .login-card {
+            border-radius: 20px;
+            border: none;
+            background-color: #ffffff;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .brand-title {
+            font-weight: 700;
+            color: var(--lilas-escuro);
+        }
+
+
+        .form-control {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .btn-primary {
+            background-color: var(--lilas-medio);
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 12px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--lilas-escuro);
+        }
+
+        /* footer */
+        footer {
+            background: rgba(33, 37, 41, 0.85);
+            backdrop-filter: blur(6px);
+            color: #fff;
+        }
